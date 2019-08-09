@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CS2 Table</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">bMgI8NyuMEVnLDeEk30HTpf4KT7vkpbQQHiEDOfS</string>
+    <string name="back4app_client_key">oKnwo1WmNrEAzUJcFVykkDoi4F1aFZWb65GQBDoL</string>
+</resources>

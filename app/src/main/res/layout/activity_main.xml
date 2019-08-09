@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingTop="16dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:fontFamily="Roboto"
+                    android:layout_height="wrap_content"
+                    android:text="Today is"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:layout_marginHorizontal="32dp"
+                    android:paddingBottom="4dp"/>
+                <TextView
+                    android:id="@+id/day"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="Roboto"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#000"
+                    android:textSize="20sp"
+                    android:layout_marginHorizontal="32dp"
+                    android:paddingBottom="8dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/listView"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:layout_height="match_parent">
+
+            </ListView>
+
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+        </RelativeLayout>
+        <Button
+            android:onClick="Notes"
+            android:text="Today's Note"
+            android:layout_marginBottom="10dp"
+            android:textColor="#6100ED"
+            android:background="@drawable/buttonlayout"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="35dp"
+            android:layout_width="wrap_content"
+            android:src="@drawable/avatar"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
